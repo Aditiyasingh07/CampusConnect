@@ -1,0 +1,155 @@
+@import "tailwindcss";
+
+.nav-glass-card {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7px);
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.btn-glass-card {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  color: red;
+  transition: all 0.3s ease;
+}
+.btn-glass-card:hover {
+  background: rgb(0, 0, 130);
+  backdrop-filter: blur(15px);
+  color: #fff;
+  font-weight: bold;
+  size: 1.2rem;
+}
+
+body {
+  background-color: #222;
+  color: #ddd;
+  font-size: 18px;
+  overflow-x: hidden;
+  line-height: 1.4;
+  font-weight: 300;
+  /* display: flex; */
+}
+h1,
+h2 {
+  color: white;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+.panel pre.prettyprint {
+  font-size: 20px;
+  text-align: left;
+  width: auto;
+  /* background-color: #222; */
+  font-weight: normal;
+  margin: 10px;
+  border: none;
+}
+.prettyprint .linenums {
+  padding: 0;
+  list-style: none;
+  background-color: #222;
+}
+.prettyprint ol li {
+  background-color: black;
+}
+
+.panel.red .prettyprint .linenums > li:nth-child(n + 7):nth-child(-n + 9),
+.panel.gray .prettyprint .linenums > li:nth-child(10),
+.panel.purple .prettyprint .linenums > li:nth-child(4),
+.panel.green .prettyprint .linenums > li:nth-child(n + 6):nth-child(-n + 10) {
+  background-color: #222;
+}
+
+.box {
+  width: 100px;
+  height: 80px;
+  text-align: center;
+  line-height: 80px;
+  background-color: white;
+  border-radius: 8px;
+  color: #222;
+  font-weight: 700;
+  margin-left: 20px;
+  will-change: transform;
+}
+
+.description,
+.final {
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  min-height: 80vh;
+}
+
+.container {
+  width: 500%;
+  height: 100%;
+  display: flex;
+  /* background-color: #222; */
+  flex-wrap: nowrap;
+}
+
+.panel {
+  font-weight: 300;
+}
+
+code {
+  padding: 0.1rem;
+  background: #fff;
+  color: #222;
+  font-size: 1.5rem;
+}
+
+h1 code {
+  font-size: 1.7rem;
+}
+
+/* 
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+} */
