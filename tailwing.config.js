@@ -1,4 +1,4 @@
-/** @type {import('tailwindcss').Config} */
+// /** @type {import('tailwindcss').Config} */
 import withMT from "@material-tailwind/react/utils/withMT";
 
 export default withMT ({
@@ -7,9 +7,7 @@ export default withMT ({
   theme: {
     extend: {
       fontFamily: {
-        Hind: ["Hind", 'serif'],
-        // serif: ['Mooli', 'serif'],
-        // pera: ['Kalam', 'serif'],
+        dis: [ "Bowlby One SC", "cursive"],
       },
     },
   },

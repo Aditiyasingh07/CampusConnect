@@ -1,225 +1,59 @@
 import React, { useRef, useEffect } from "react";
 import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Events from "../Events/Events";
 import Memories from "../Memories/Memories";
 import Navbar from "../Navbar/Navbar";
-// import ""; // Import the CSS file
+import Review from "../Review/Review";
 
 export default function Home() {
-    const containerRef = useRef(null);
+  const contwoRef = useRef(null);
 
   useEffect(() => {
-    // Register ScrollTrigger plugin
-    gsap.registerPlugin(ScrollTrigger);
-
-    // Get the container
-    const container = containerRef.current;
-
-    // Sections inside the container
-    const sections = gsap.utils.toArray(".panel", container);
-
-    // Main scroll animation
-    const scrollTween = gsap.to(sections, {
-      xPercent: -100 * (sections.length - 1),
-      ease: "none",
-      scrollTrigger: {
-        trigger: container,
-        pin: true,
-        scrub: 0.1,
-        end: "+=3000",
-      },
+    gsap.to(contwoRef.current, {
+      rotationZ: "360",
+      duration: 5,
+      repeat: -1,
+      yoyo: true,
     });
+  });
 
-    // Box animations
-    gsap.set(".box-1, .box-2", { y: 100 });
+  const textRef = useRef(null);
 
-    gsap.to(".box-1", {
-      y: -130,
-      duration: 2,
-      ease: "elastic",
-      scrollTrigger: {
-        trigger: ".box-1",
-        containerAnimation: scrollTween,
-        start: "left center",
-        toggleActions: "play none none reset",
-        id: "1",
-      },
-    });
-
-    gsap.to(".box-2", {
-      y: -120,
-      backgroundColor: "#1e90ff",
-      ease: "none",
-      scrollTrigger: {
-        trigger: ".box-2",
-        containerAnimation: scrollTween,
-        start: "center 80%",
-        end: "center 20%",
-        scrub: true,
-        id: "2",
-      },
-    });
-
-    ScrollTrigger.create({
-      trigger: ".box-3",
-      containerAnimation: scrollTween,
-      toggleClass: "active",
-      start: "center 60%",
-      id: "3",
-    });
-
-    ScrollTrigger.create({
-      trigger: ".green",
-      containerAnimation: scrollTween,
-      start: "center 65%",
-      end: "center 51%",
-      onEnter: () => console.log("enter"),
-      onLeave: () => console.log("leave"),
-      onEnterBack: () => console.log("enterBack"),
-      onLeaveBack: () => console.log("leaveBack"),
-      onToggle: (self) => console.log("active", self.isActive),
-      id: "4",
-    });
-
-    return () => {
-      ScrollTrigger.killAll();
-    };
+  useEffect(() => {
+    gsap.fromTo(
+      textRef.current,
+      { x: "100%" },
+      { x: "-100%", duration: 10, repeat: -1, ease: "linear" }
+    );
   }, []);
 
   return (
-    <div className="flex flex-col">
-    <Navbar/>
-      <div className="description">
-        <div>
-          <h1>
-            Horizontal "<code>containerAnimation</code>"
+    <>
+      <Navbar />
+      <div className="">
+        <div className=" bg-[#622486] text-black description flex [clip-path:polygon(0%_0%,100%_0%,100%_80%,50%_90%,0%_100%)]">
+          <h1 className="font-dis flex justify-center text-[5rem] text-white ">
+            <div className=" camp text-[#ffb800] mb-[-50px]">
+            Campus
+            </div>
+            <div className="text-[#cdcabb]">
+            <div ref={contwoRef} className=" inline-block">C</div>onnect
+            </div>
           </h1>
-          <p>
-            Scroll this page vertically and you'll see a horizontal
-            fake-scrolling section where a container is animated on the x-axis
-            using a ScrollTrigger animation. With{" "}
-            <code>containerAnimation</code> you can trigger animations when
-            certain elements <i>inside</i> that container enter the viewport
-            horizontally! It's like a ScrollTrigger inside of a ScrollTrigger.
-            🤯
-          </p>
         </div>
-        <div className="scroll-down">
-          Scroll down<div className="arrow"></div>
+        <div className="relative w-full overflow-hidden  ">
+          <div className="absolute h-full" />
+          <div
+            className="whitespace-nowrap font-dis bg-gradient-to-r from-blue-600 via-red-400 to-pink-800 text-transparent bg-clip-text tracking-widest text-5xl font-bold flex "
+            ref={textRef}
+          >
+            AVVIARE EDUCATIONAL HUB, NOIDA SECTOR - 62
+          </div>
         </div>
+        <Events />
+        <Memories />
+        <Review/>
       </div>
-
-      <div className="container" ref={containerRef}>
-        <div className="panel blue">
-          Scroll down to animate horizontally &gt;
-        </div>
-
-        <section className="panel red">
-          <div>
-            <pre className="code-block prettyprint lang-js linenums">
-              {`gsap.to(".box-1", {
-  y: -130,
-  duration: 2,
-  ease: "elastic",
-  scrollTrigger: {
-    trigger: ".box-1",
-    containerAnimation: scrollTween,
-    start: "left center",
-    toggleActions: "play none none reset"
-  }
-});`}
-            </pre>
-            Fire an animation at a particular spot...
-          </div>
-          <div className="box-1 box">box-1</div>
-        </section>
-
-        <section className="panel gray">
-          <div>
-            <pre className="code-block prettyprint lang-js linenums">
-              {`gsap.to(".box-2", {
-  y: -120,
-  backgroundColor: "#1e90ff",
-  ease: "none",
-  scrollTrigger: {
-    trigger: ".box-2",
-    containerAnimation: scrollTween,
-    start: "center 80%",
-    end: "center 20%",
-    scrub: true
-  }
-});`}
-            </pre>
-            ...or scrub it back &amp; forth with the scrollbar
-          </div>
-          <div className="box-2 box">box-2</div>
-        </section>
-
-        <section className="panel purple">
-          <div>
-            <pre className="code-block prettyprint lang-js linenums">
-              {`ScrollTrigger.create({
-  trigger: ".box-3",
-  containerAnimation: scrollTween,
-  toggleClass: "active",
-  start: "center 60%"
-});`}
-            </pre>
-            Toggle a CSS class
-          </div>
-          <div className="box-3 box">box-3</div>
-        </section>
-
-        <section className="panel green">
-          <div>
-            <pre className="code-block prettyprint lang-js linenums">
-              {`ScrollTrigger.create({
-  trigger: ".green",
-  containerAnimation: scrollTween,
-  start: "center 65%",
-  end: "center 51%",
-  onEnter: () => console.log("enter"),
-  onLeave: () => console.log("leave"),
-  onEnterBack: () => console.log("enterBack"),
-  onLeaveBack: () => console.log("leaveBack"),
-  onToggle: self => console.log("active", self.isActive)
-});`}
-            </pre>
-            Use the rich callback system
-          </div>
-        </section>
-      </div>
-
-      <div className="final">
-        <div>
-          <h1>Wasn't that fun?</h1>
-          <p>Here are a few caveats to keep in mind:</p>
-          <ul>
-            <li>
-              The fake-scrolling animation (just the part that's moving the
-              container horizontally) must have no easing (
-              <code>ease: "none"</code>).
-            </li>
-            <li>
-              Pinning and snapping won't work on ScrollTriggers with a{" "}
-              <code>containerAnimation</code>.
-            </li>
-            <li>
-              The mapping of scroll position trigger points are based on the
-              trigger element itself not being animated horizontally (inside the
-              container). If you need to animate the trigger, you can either
-              wrap it in a &lt;div&gt; and use that as the trigger instead or
-              just factor the trigger's movement into your end position. For
-              example, if you animate it left 100px, make the <code>end</code>{" "}
-              100px further to the left.
-            </li>
-            <li>Requires ScrollTrigger 3.8.0 or later</li>
-          </ul>
-        </div>
-      </div>
-      <Events/>
-      <Memories/>
-    </div>
+    </>
   );
 }

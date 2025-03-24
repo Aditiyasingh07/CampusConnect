@@ -1,7 +1,6 @@
-// src/components/Signup.js
-import React, { useState } from "react";
+import React, { useState} from "react";
 import { useNavigate, Link } from "react-router-dom";
-import { auth, db } from "../../firebaseConfig"; // Import auth and db from firebaseConfig
+import { auth, db } from "../../firebaseConfig"; 
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import {
   collection,
@@ -70,10 +69,13 @@ function Signup() {
     }
   };
 
+
+
   return (
     <>
     <Navbar/>
-    <div className="p-6">
+    <div className="flex p-6 h-screen signup pt-[200px]">
+      <div className=" flex flex-col justify-center text-white items-center w-[40%] h-[400px] m-auto ">
       <h1 className="text-2xl font-bold">Campus Connect Signup</h1>
       <form
         onSubmit={(e) => {
@@ -87,47 +89,48 @@ function Signup() {
           placeholder="Name"
           value={name}
           onChange={(e) => setName(e.target.value)}
-          className="w-full p-2 border rounded"
+          className="w-full p-3 border outline-none rounded-xl"
         />
         <input
           type="text"
           placeholder="Course Name"
           value={courseName}
           onChange={(e) => setCourseName(e.target.value)}
-          className="w-full p-2 border rounded"
+          className="w-full p-3 border outline-none rounded-xl"
         />
         <input
           type="text"
           placeholder="Enrollment ID"
           value={enrollmentId}
           onChange={(e) => setEnrollmentId(e.target.value)}
-          className="w-full p-2 border rounded"
+          className="w-full p-3 border outline-none rounded-xl"
         />
         <input
           type="email"
           placeholder="Email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-          className="w-full p-2 border rounded"
+          className="w-full p-3 border outline-none rounded-xl"
         />
         <input
           type="password"
           placeholder="Password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
-          className="w-full p-2 border rounded"
+          className="w-full p-3 border outline-none rounded-xl"
         />
         <button
           type="submit"
           disabled={loading}
-          className="bg-blue-500 text-white px-4 py-2 rounded"
+          className="w-full text-2xl font-black rounded-3xl bg-gradient-to-r npm from-red-400 to-pink-800 text-white p-4"
         >
           {loading ? "Signing up..." : "Signup"}
         </button>
-          <p className="mt-4">
+          <p>
                 I have an account? <Link to="/login" className="text-blue-500">Login here</Link>.
             </p>
       </form>
+      </div>
     </div>
     </>
   );
