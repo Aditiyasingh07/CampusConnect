@@ -6,6 +6,7 @@ import { gsap } from "gsap";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { collection, query, where, getDocs } from "firebase/firestore";
 import Navbar from "../Navbar/Navbar";
+import springlogo from "/src/assets/spring.png"
 
 function Login() {
   const [email, setEmail] = useState("");
@@ -98,7 +99,7 @@ function Login() {
         <div>
             <img 
             ref={loginanim}
-            src="/src/assets/spring.png"
+            src={springlogo}
             className="w-[60%] mr-15 rotate-12"
             >
             </img>

@@ -2,6 +2,8 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import AuthButtons from "../AuthButton/AuthButton";
+import mainlogo from "/src/assets/main logo.png";
+import menu from "/src/assets/menu.svg";
 
 const CurvedMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,7 +14,7 @@ const CurvedMenu = () => {
         <div className="flex justify-center items-center text-3xl text-black bg-white h-15 w-17 rounded-full">
           {/* <h1 className=" font-bold mr-1">C</h1>
           <h1>C</h1> */}
-          <img src="/src/assets/main logo.png" width="50px"></img>
+          <img src={mainlogo} width="50px"></img>
         </div>
       </div>
       <div className="relative">
@@ -21,7 +23,7 @@ const CurvedMenu = () => {
             className="fixed top-5 z-50 menu-glass-card right-15 text-white px-5 py-4 rounded-full shadow-lg"
             onClick={() => setIsOpen(true)}
           >
-            <img src="/src/assets/menu.svg" width="30px"></img>
+            <img src={menu} width="30px"></img>
           </button>
         )}
 

@@ -30,7 +30,7 @@ export default function All() {
       <div className=" bg-gray-900 flex justify-center items-center">
         <div className="flex flex-col justify-center mt-10 items-center gap-5">
           <h1 className="text-4xl font-extrabold text-white ">
-            CRICKET
+            ALL MEMORIES
           </h1>
           <section id="photos" className="p-6 w-[80%]">
       <div className="columns-2 sm:columns-3 gap-5">

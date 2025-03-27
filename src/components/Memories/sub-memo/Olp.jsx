@@ -1,4 +1,8 @@
 import react from "react";
+import imgone from "/src/assets/memo/olp1.jpg"
+import imgtwo from "/src/assets/memo/olp2.jpg"
+import imgthr from "/src/assets/memo/olp3.jpg"
+import imgfor from "/src/assets/memo/olp4.jpg"
 
 export default function Oly() {
   return (
@@ -12,22 +16,22 @@ export default function Oly() {
           </h1>
           <img
             className="rounded-tl-4xl w-[300px] h-[300px] hover:scale-114 hover:rounded-2xl duration-600"
-            src="/src/assets/memo/olp1.jpg"
+            src={imgone}
             alt=""
           />
           <img
             className="rounded-tr-4xl w-[300px] h-[300px] hover:scale-114 hover:rounded-2xl duration-600"
-            src="/src/assets/memo/olp2.jpg"
+            src={imgtwo}
             alt=""
           />
           <img
             className="rounded-bl-4xl w-[300px] h-[300px] mb-5 hover:scale-114 hover:rounded-2xl duration-600"
-            src="/src/assets/memo/olp3.jpg"
+            src={imgthr}
             alt=""
           />
           <img
             className="rounded-br-4xl w-[300px] h-[300px] mb-5 hover:scale-114 hover:rounded-2xl duration-600"
-            src="/src/assets/memo/olp4.jpg"
+            src={imgfor}
             alt=""
           />
         </div>

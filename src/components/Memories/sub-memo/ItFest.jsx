@@ -1,4 +1,8 @@
 import react from "react";
+import imgone from "/src/assets/memo/it1.jpg"
+import imgtwo from "/src/assets/memo/it2.jpg"
+import imgthr from "/src/assets/memo/it3.jpg"
+import imgfor from "/src/assets/memo/it4.jpg"
 
 export default function ItFest() {
   return (
@@ -12,25 +16,25 @@ export default function ItFest() {
           </h1>
           <img
             className="rounded-tl-4xl hover:scale-114 hover:rounded-2xl duration-600"
-            src="/src/assets/memo/it1.jpg"
+            src={imgone}
             alt=""
             width="500px"
           />
           <img
             className="rounded-tr-4xl hover:scale-114 hover:rounded-2xl duration-600"
-            src="/src/assets/memo/it2.jpg"
+            src={imgtwo}
             alt=""
             width="500px"
           />
           <img
             className="rounded-bl-4xl hover:scale-114 hover:rounded-2xl duration-600"
-            src="/src/assets/memo/it3.jpg"
+            src={imgthr}
             alt=""
             width="500px"
           />
           <img
             className="rounded-br-4xl hover:scale-114 hover:rounded-2xl duration-600"
-            src="/src/assets/memo/it4.jpg"
+            src={imgfor}
             alt=""
             width="500px"
           />

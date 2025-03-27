@@ -1,4 +1,5 @@
 import react from "react";
+import relogo from "/src/assets/review.png"
 
 export default function Review() {
   return (
@@ -11,7 +12,7 @@ export default function Review() {
           <div className="flex flex-col p-5 rounded-3xl justify-center items-center bg-[#119CFDFF] w-1/2 h-[300px]">
             <img
               className="rounded-full"
-              src="/src/assets/cricket.jpeg"
+              src={relogo}
               width="100px"
             ></img>
             <h1 className=" text-[16px] font-bold text-white mb-3">
@@ -25,7 +26,7 @@ export default function Review() {
           <div className="flex flex-col p-5 rounded-3xl justify-center items-center bg-[#119CFDFF] w-1/3 h-[300px]">
             <img
               className="rounded-full"
-              src="/src/assets/cricket.jpeg"
+              src={relogo}
               width="100px"
             ></img>
             <h1 className=" text-[16px] font-bold text-white mb-3">
@@ -39,7 +40,7 @@ export default function Review() {
           <div className="flex flex-col p-5 rounded-3xl justify-center items-center bg-[#119CFDFF] w-1/3 h-[300px]">
             <img
               className="rounded-full"
-              src="/src/assets/cricket.jpeg"
+              src={relogo}
               width="100px"
             ></img>
             <h1 className=" text-[16px] font-bold text-white mb-3">
@@ -53,7 +54,7 @@ export default function Review() {
           <div className="flex flex-col p-5 rounded-3xl justify-center items-center bg-[#119CFDFF] w-1/2 h-[300px]">
             <img
               className="rounded-full"
-              src="/src/assets/cricket.jpeg"
+              src={relogo}
               width="100px"
             ></img>
             <h1 className=" text-[16px] font-bold text-white mb-3">
@@ -67,7 +68,7 @@ export default function Review() {
           <div className="flex flex-col p-5 rounded-3xl justify-center items-center bg-[#119CFDFF] w-1/2 h-[300px]">
             <img
               className="rounded-full"
-              src="/src/assets/cricket.jpeg"
+              src={relogo}
               width="100px"
             ></img>
             <h1 className=" text-[16px] font-bold text-white mb-3">
@@ -81,7 +82,7 @@ export default function Review() {
           <div className="flex flex-col p-5 rounded-3xl justify-center items-center bg-[#119CFDFF] w-1/3 h-[300px]">
             <img
               className="rounded-full"
-              src="/src/assets/cricket.jpeg"
+              src={relogo}
               width="100px"
             ></img>
             <h1 className=" text-[16px] font-bold text-white mb-3">
