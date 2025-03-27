@@ -3,12 +3,13 @@ import imgone from "/src/assets/memo/olp1.jpg"
 import imgtwo from "/src/assets/memo/olp2.jpg"
 import imgthr from "/src/assets/memo/olp3.jpg"
 import imgfor from "/src/assets/memo/olp4.jpg"
+import olpbg from "/src/assets/opl.jpg"
 
 export default function Oly() {
   return (
     <>
       <div className="flex flex-col justify-center items-center">
-        <img className=" w-full h-[742px]" src="/src/assets/opl.jpg"></img>
+        <img className=" w-full h-[742px]" src={olpbg}></img>
         <div className=" absolute z-30 h-full w-full bg-black opacity-80"></div>
         <div className=" absolute z-40 w-[50%] flex flex-wrap justify-center mt-25 items-center gap-5">
           <h1 className="absolute z-40 text-4xl font-extrabold text-white top-[-100px]">

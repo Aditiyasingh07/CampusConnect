@@ -3,12 +3,14 @@ import imgone from "/src/assets/memo/it1.jpg"
 import imgtwo from "/src/assets/memo/it2.jpg"
 import imgthr from "/src/assets/memo/it3.jpg"
 import imgfor from "/src/assets/memo/it4.jpg"
+import itfestbg from "/src/assets/itfest.jpg"
+
 
 export default function ItFest() {
   return (
     <>
       <div className="bg-pink-900 flex flex-col justify-center items-center ">
-        <img className="w-full h-[742px]" src="/src/assets/itfest.jpg"></img>
+        <img className="w-full h-[742px]" src={itfestbg}></img>
         <div className=" absolute z-30 h-full w-full bg-black opacity-80"></div>
         <div className=" absolute z-40 flex flex-wrap justify-center mt-25 items-center gap-5">
           <h1 className="absolute z-40 text-4xl font-extrabold text-white top-[-100px]">
