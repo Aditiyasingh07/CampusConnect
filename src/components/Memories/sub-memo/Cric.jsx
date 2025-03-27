@@ -1,10 +1,9 @@
 import react from "react";
-import imgone from "/src/assets/memo/cri1.jpg"
-import imgtwo from "/src/assets/memo/cri2.jpg"
-import imgthr from "/src/assets/memo/cri3.jpg"
-import imgfor from "/src/assets/memo/cri4.jpg"
-import cricbg from "/src/assets/cricket.jpeg"
-
+import imgone from "../../../memo/cri1.jpg";
+import imgtwo from "../../../memo/cri2.jpg";
+import imgthr from "../../../memo/cri3.jpg";
+import imgfor from "../../../memo/cri4.jpg";
+import cricbg from "/src/assets/cricket.jpeg";
 
 export default function Cric() {
   return (

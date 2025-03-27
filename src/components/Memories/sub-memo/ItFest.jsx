@@ -1,8 +1,8 @@
 import react from "react";
-import imgone from "/src/assets/memo/it1.jpg"
-import imgtwo from "/src/assets/memo/it2.jpg"
-import imgthr from "/src/assets/memo/it3.jpg"
-import imgfor from "/src/assets/memo/it4.jpg"
+import imgone from "../../../memo/it1.jpg"
+import imgtwo from "../../../memo/it2.jpg"
+import imgthr from "../../../memo/it3.jpg"
+import imgfor from "../../../memo/it4.jpg"
 import itfestbg from "/src/assets/itfest.jpg"
 
 

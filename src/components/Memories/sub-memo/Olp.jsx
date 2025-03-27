@@ -1,8 +1,8 @@
 import react from "react";
-import imgone from "/src/assets/memo/olp1.jpg"
-import imgtwo from "/src/assets/memo/olp2.jpg"
-import imgthr from "/src/assets/memo/olp3.jpg"
-import imgfor from "/src/assets/memo/olp4.jpg"
+import imgone from "../../../memo/olp1.jpg"
+import imgtwo from "../../../memo/olp2.jpg"
+import imgthr from "../../../memo/olp3.jpg"
+import imgfor from "../../../memo/olp4.jpg"
 import olpbg from "/src/assets/opl.jpg"
 
 export default function Oly() {

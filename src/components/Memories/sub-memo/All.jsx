@@ -23,7 +23,7 @@ export default function All() {
 
 
     const imageCount = 19;
-    const images = Array.from({ length: imageCount }, (_, i) => `/src/assets/memo/all${i + 1}.jpg`);
+    const images = Array.from({ length: imageCount }, (_, i) => `/memo/all${i + 1}.jpg`);
 
   return (
     <>

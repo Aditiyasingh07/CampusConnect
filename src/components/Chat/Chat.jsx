@@ -78,13 +78,13 @@ function Chat() {
           <>
             <div className="w-1/4 border-r pr-4">
               <h2 className="text-3xl text-center font-bold">Groups</h2>
-              <ul className="mt-4 space-y-2">
+              <ul className="mt-4 space-y-2 text-gray-800">
                 {groups.map((group) => (
                   <li
                     key={group.id}
                     className={`p-2 rounded-xl text-2xl font-bold text-center cursor-pointer ${
                       currentGroup?.id === group.id
-                        ? "bg-gray-300"
+                        ? "bg-gray-200"
                         : "bg-gray-100"
                     }`}
                     onClick={() => {
@@ -98,7 +98,7 @@ function Chat() {
               </ul>
               <button
                 onClick={handleLogout}
-                className="w-full text-2xl font-black rounded-3xl bg-gradient-to-r from-blue-400 via-red-400 to-pink-400 text-white p-4 mt-10"
+                className="w-full text-2xl font-black rounded-3xl bg-gradient-to-r via-red-400  text-white p-4 mt-10"
               >
                 Logout
               </button>
@@ -126,14 +126,14 @@ function Chat() {
                     />
                     <button
                       onClick={sendMessage}
-                      className="ml-2 bg-gradient-to-r from-red-400 to-pink-800 text-white text-2xl font-bold mt-5 rounded-2xl py-2"
+                      className="ml-2 bg-gradient-to-r from-red-400 text-white text-2xl font-bold mt-5 rounded-2xl py-2"
                     >
                       Send
                     </button>
                   </div>
                 </div>
               ) : (
-                <h2 className="text-xl text-black font-bold text-center mt-10">
+                <h2 className="text-2xl text-white font-bold text-center mt-10">
                   Select a group to chat
                 </h2>
               )}

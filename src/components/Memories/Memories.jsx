@@ -17,16 +17,16 @@ export default function Memories() {
           </div>
           <div className=" memo flex flex-col justify-center items-center bg-conic-180 from-red-800 via-indigo-50 to-red-800 h-60 w-[30%] text-black font-bold rounded-4xl ">
             <h1 className= " text-gray-700 text-2xl">Cricket</h1>
-            <Link to="cric">
+            <Link to="/cric">
             <buttom className=" text-white p-3 font-bold rounded-3xl">View More</buttom></Link>
           </div>
           <div className=" memo flex flex-col justify-center items-center bg-conic-180 from-yellow-800 via-indigo-50 to-yellow-800 h-60 w-[30%] text-black font-bold rounded-4xl">
             <h1 className= " text-gray-700 text-2xl">Olympia</h1>
-            <Link to="olp">
+            <Link to="/olp">
             <buttom className=" text-white p-3 font-bold rounded-3xl">View More</buttom></Link>
           </div>
           <div className=" memo flex flex-col justify-center items-center bg-conic-180 from-indigo-800 via-indigo-50 to-indigo-800 h-60 w-[30%] text-black font-bold rounded-4xl ">
-            <Link to="all">
+            <Link to="/all">
             <buttom className=" text-white p-3 text-2xl font-bold rounded-3xl"> All Memories</buttom></Link>
           </div>
         </div>
