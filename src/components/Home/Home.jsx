@@ -30,10 +30,10 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <div className="">
-        <div className=" bg-[#622486] text-black description flex [clip-path:polygon(0%_0%,100%_0%,100%_80%,50%_90%,0%_100%)]">
-          <h1 className="font-dis flex justify-center text-[5rem] text-white ">
-            <div className=" camp text-[#ffb800] mb-[-50px]">
+      <div className="md:w-full w-[400%]">
+        <div className=" bg-[#622486] text-black description md:h-full h-[200vh] flex [clip-path:polygon(0%_0%,100%_0%,100%_80%,50%_90%,0%_100%)]">
+          <h1 className="font-dis flex justify-center md:text-[5rem] text-[9rem] text-white ">
+            <div className=" camp text-[#ffb800] md:mb-[-50px] mb-0">
             Campus
             </div>
             <div className="text-[#cdcabb]">
@@ -44,13 +44,14 @@ export default function Home() {
         <div className="relative w-full overflow-hidden  ">
           <div className="absolute h-full" />
           <div
-            className="whitespace-nowrap font-dis bg-gradient-to-r from-blue-600 via-red-400 to-pink-800 text-transparent bg-clip-text tracking-widest text-5xl font-bold flex "
+            className="whitespace-nowrap font-dis bg-gradient-to-r from-blue-600 via-red-400 to-pink-800 text-transparent bg-clip-text
+            md:w-full w-[280%] tracking-widest md:text-5xl text-[10rem] font-bold flex "
             ref={textRef}
           >
             AVVIARE EDUCATIONAL HUB, NOIDA SECTOR - 62
           </div>
         </div>
-        <Events />
+        <Events /> 
         <Memories />
         <Review/>
       </div>

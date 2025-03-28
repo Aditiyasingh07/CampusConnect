@@ -33,11 +33,11 @@ export default function Events() {
     <>
     <Navbar/>
       <div ref={containerRef}>
-        <h1 className=" text-5xl font-extrabold flex text-black justify-center pt-30  tracking-widest">
+        <h1 className=" md:text-5xl text-[8rem] font-extrabold flex text-black justify-center pt-30 tracking-widest">
           EVENTS
         </h1>
         <div
-          className=" flex justify-evenly items-center px-10 w-[300%] h-[700px] ">
+          className=" flex justify-evenly items-center px-10 md:w-[300%] w-[400%] md:h-[700px] h-[100%] ">
           <section className=" bg-[#09191f] panel text-white rounded-[50px] hover:rounded-4xl transition delay-300">
             <EventCard />
           </section>

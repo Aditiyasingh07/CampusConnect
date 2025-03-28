@@ -9,21 +9,22 @@ const CurvedMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div>
-      <div className=" fixed top-5 z-50 menu-glass-card left-15 rounded-full ">
-        <div className="flex justify-center items-center text-3xl text-black bg-white h-15 w-17 rounded-full">
+    <div> 
+      <div className=" fixed top-5 z-50 menu-glass-card md:left-15 rounded-full md:mt-0 mt-5 md:ml-0 ml-10">
+        <div className="flex justify-center items-center bg-white md:h-20 md:w-20 h-[250px] w-[250px] rounded-full">
           {/* <h1 className=" font-bold mr-1">C</h1>
           <h1>C</h1> */}
-          <img src={mainlogo} width="50px"></img>
+          <img className="md:w-[100px] w-[200px]" src={mainlogo}></img>
         </div>
       </div>
       <div className="relative">
         {!isOpen && (
           <button
-            className="fixed top-5 z-50 menu-glass-card right-15 text-white px-5 py-4 rounded-full shadow-lg"
+            className="fixed top-5 z-50 menu-glass-card md:right-15 right-0 text-white md:px-5 px-10 md:py-4 py-10 rounded-full shadow-lg
+            md:mt-0 mt-5 md:mr-0 mr-10 md:h-20 md:w-20 h-[250px] w-[250px] flex items-center justify-center"
             onClick={() => setIsOpen(true)}
           >
-            <img src={menu} width="30px"></img>
+            <img className="md:w-[40px] w-[120px]" src={menu}></img>
           </button>
         )}
 
@@ -31,16 +32,16 @@ const CurvedMenu = () => {
           initial={{ x: "100%" }}
           animate={{ x: isOpen ? 0 : "100%" }}
           transition={{ type: "spring", stiffness: 40, damping: 7 }}
-          className="fixed top-0 right-0 z-50 h-[90%] w-[17%] bg-[#A100FFFF] shadow-2xl rounded-l-[50px] flex flex-col items-center justify-center space-y-6"
+          className="fixed top-0 right-0 z-50 md:h-[90%] h-[40%] md:w-[17%] w-[100%] bg-[#A100FFFF] shadow-2xl rounded-l-[50px] flex flex-col items-center justify-center space-y-6"
         >
           <button
-            className="absolute top-5 text-3xl right-5 text-white rounded-full bg-[#119CFDFF] w-15 h-15 flex items-center justify-center shadow-lg"
+            className="absolute top-5 md:text-3xl text-[8rem] right-5 text-white rounded-full bg-[#119CFDFF] md:w-15 w-50 md:h-15 h-50 flex items-center justify-center shadow-lg"
             onClick={() => setIsOpen(false)}
           >
             💢
           </button>
 
-          <div className="flex gap-5 flex-col text-white text-3xl mt-10">
+          <div className="flex gap-5 md:flex-col flex-wrap justify-center text-white md:text-3xl text-[7rem] mt-10">
             <Link to="/" className="hover:text-gray-200 cursor-pointer">
               . HOME
             </Link>

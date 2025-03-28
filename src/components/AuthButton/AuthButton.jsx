@@ -28,7 +28,7 @@ function AuthButtons() {
     return (
         <div>
             {user ? (
-                <button onClick={handleLogout} className=" btn-glass-card text-white text-2xl hover:text-[20px] font-semibold px-4 py-2 h-15 w-40 logout-btn rounded-4xl">
+                <button onClick={handleLogout} className=" btn-glass-card text-white md:text-2xl text-[5rem] hover:text-[20px] font-semibold md:mt-0 mt-10 px-4 py-2 md:h-15 h-40 md:w-40 w-80 logout-btn rounded-4xl">
                     Logout
                 </button>
             ) : (
