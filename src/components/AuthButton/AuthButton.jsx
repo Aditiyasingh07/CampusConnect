@@ -32,11 +32,11 @@ function AuthButtons() {
                     Logout
                 </button>
             ) : (
-                <div className=" flex flex-col gap-5 mt-10 space-x-4">
-                    <button className=" bg-transprent btn-glass-card text-white px-4 py-2 font-semibold rounded h-15 w-30 text-2xl hover:text-[20px]">
+                <div className=" flex md:flex-col gap-5 mt-10 space-x-4">
+                    <button className=" bg-transprent btn-glass-card text-white font-semibold rounded md:mt-0 mt-10 px-4 py-2 md:h-15 h-40 md:w-40 w-80 md:text-2xl text-[5rem] hover:text-[20px]">
                         <Link to="/login">Login</Link>
                     </button>
-                    <button className="bg-green-500 btn-glass-card h-15 w-30 text-2xl hover:text-[20px] font-semibold text-white px-4 py-2 rounded">
+                    <button className="bg-green-500 btn-glass-card md:mt-0 mt-10 px-4 py-2 md:h-15 h-40 md:w-40 w-80 md:text-2xl text-[5rem] hover:text-[20px] font-semibold text-white rounded">
                     <Link to="/signup">Signup</Link>
                     </button>
                 </div>

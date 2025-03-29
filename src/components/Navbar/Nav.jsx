@@ -32,7 +32,7 @@ const CurvedMenu = () => {
           initial={{ x: "100%" }}
           animate={{ x: isOpen ? 0 : "100%" }}
           transition={{ type: "spring", stiffness: 40, damping: 7 }}
-          className="fixed top-0 right-0 z-50 md:h-[90%] h-[40%] md:w-[17%] w-[100%] bg-[#A100FFFF] shadow-2xl rounded-l-[50px] flex flex-col items-center justify-center space-y-6"
+          className="fixed top-0 right-0 z-50 md:h-[90%] h-[40%] md:w-[17%] w-[100%] bg-[#A100FFFF] shadow-2xl md:rounded-l-[50px] rounded-l-[0px] flex flex-col items-center justify-center space-y-6"
         >
           <button
             className="absolute top-5 md:text-3xl text-[8rem] right-5 text-white rounded-full bg-[#119CFDFF] md:w-15 w-50 md:h-15 h-50 flex items-center justify-center shadow-lg"
