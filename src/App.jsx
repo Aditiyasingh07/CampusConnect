@@ -42,7 +42,7 @@ function MouseBallTracker() {
 function App() {
     return (
         <Router>
-            <div className=" container relative">
+            <div className=" relative">
                 <MouseBallTracker />
                 <Routes>
                     <Route path="/" element={<Home />} />

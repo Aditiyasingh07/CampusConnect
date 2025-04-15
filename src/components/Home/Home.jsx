@@ -45,7 +45,7 @@ export default function Home() {
           <div className="absolute h-full" />
           <div
             className="whitespace-nowrap font-dis bg-gradient-to-r from-blue-600 via-red-400 to-pink-800 text-transparent bg-clip-text
-            md:w-full w-[280%] tracking-widest md:text-5xl text-[10rem] font-bold flex "
+            md:w-[130%] w-[280%] tracking-widest md:text-5xl text-[10rem] font-bold flex "
             ref={textRef}
           >
             AVVIARE EDUCATIONAL HUB, NOIDA SECTOR - 62
