@@ -32,7 +32,7 @@ export default function Home() {
       <Navbar />
       <div className="md:w-full w-[400%]">
         <div className=" bg-[#622486] gap-20 text-black description md:h-full h-[200vh] md:flex [clip-path:polygon(0%_0%,100%_0%,100%_80%,50%_90%,0%_100%)]">
-          <h1 className="font-dis flex flex-col md:mt-0 mt-[300px] md:mb-0 mb-10 items-center justify-center md:text-[5rem] text-[9rem] text-white ">
+          <h1 className="font-dis flex flex-col md:ml-10 ml-0 md:mt-0 mt-[300px] md:mb-0 mb-10 items-center justify-center md:text-[5rem] text-[9rem] text-white ">
             <div className=" camp text-[#ffb800] md:mb-[-50px] mb-0">
             Campus 
             </div>
@@ -40,8 +40,8 @@ export default function Home() {
             <div ref={contwoRef} className=" inline-block">C</div>onnect
             </div>
           </h1>
-          <form className="bg-gradient-to-t rounded-2xl from-[#119CFDFF] to-[#622486] md:w-full w-[60%] m-auto">
-            <div className="flex flex-col md:gap-3 gap-5 rounded-3xl px-5 py-10 justify-center  items-center md:mt-[-10px] mt-0">
+          <form className="bg-gradient-to-t rounded-2xl from-[#119CFDFF] to-[#622486] md:w-[50%] w-[60%] m-auto">
+            <div className="flex flex-col md:gap-5 gap-5 rounded-3xl px-5 py-10 justify-center items-center md:mt-[-10px] mt-0">
               <input
                 type="text"
                 placeholder="Enter your name"
@@ -59,8 +59,8 @@ export default function Home() {
               />
               <textarea
                 placeholder="Enter your message"
-                className="md:w-[30rem] w-[40rem] md:h-[3rem] h-[5rem] md:text-xl text-4xl rounded-2xl p-2 pl-7 text-white border-gray-200 border-2"/>
-              <button className="bg-[#ffb800] text-black font-dis md:w-[10rem] w-[5rem] h-[3rem] rounded-full ml-2 ">
+                className="md:w-[30rem] w-[40rem] md:h-[7rem] h-[9rem] md:text-xl text-4xl rounded-2xl p-2 pl-7 text-white border-gray-200 border-2"/>
+              <button className="bg-[#ffb800] text-black font-dis md:w-[10rem] w-[15rem] md:h-[3rem] h-[5rem] rounded-full md:text-2xl text-4xl ml-2 ">
                 Enquiry
               </button>
             </div>
@@ -70,7 +70,7 @@ export default function Home() {
           <div className="absolute h-full" />
           <div
             className="whitespace-nowrap font-dis bg-gradient-to-r from-blue-600 via-red-400 to-pink-800 text-transparent bg-clip-text
-            md:w-[130%] w-[280%] tracking-widest md:text-5xl text-[10rem] font-bold flex "
+            md:w-[130%] w-[345%] tracking-widest md:text-5xl text-[10rem] font-bold flex "
             ref={textRef}
           >
             AVVIARE EDUCATIONAL HUB, NOIDA SECTOR - 62
