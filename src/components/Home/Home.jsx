@@ -31,15 +31,40 @@ export default function Home() {
     <>
       <Navbar />
       <div className="md:w-full w-[400%]">
-        <div className=" bg-[#622486] text-black description md:h-full h-[200vh] flex [clip-path:polygon(0%_0%,100%_0%,100%_80%,50%_90%,0%_100%)]">
-          <h1 className="font-dis flex justify-center md:text-[5rem] text-[9rem] text-white ">
+        <div className=" bg-[#622486] gap-20 text-black description md:h-full h-[200vh] md:flex [clip-path:polygon(0%_0%,100%_0%,100%_80%,50%_90%,0%_100%)]">
+          <h1 className="font-dis flex flex-col md:mt-0 mt-[300px] md:mb-0 mb-10 items-center justify-center md:text-[5rem] text-[9rem] text-white ">
             <div className=" camp text-[#ffb800] md:mb-[-50px] mb-0">
-            Campus
+            Campus 
             </div>
             <div className="text-[#cdcabb]">
             <div ref={contwoRef} className=" inline-block">C</div>onnect
             </div>
           </h1>
+          <form className="bg-gradient-to-t rounded-2xl from-[#119CFDFF] to-[#622486] md:w-full w-[60%] m-auto">
+            <div className="flex flex-col md:gap-3 gap-5 rounded-3xl px-5 py-10 justify-center  items-center md:mt-[-10px] mt-0">
+              <input
+                type="text"
+                placeholder="Enter your name"
+                className="md:w-[30rem] w-[40rem] md:h-[3rem] h-[5rem] md:text-xl text-4xl rounded-2xl p-2 pl-7 text-white border-gray-200 border-2"
+              />
+              <input
+                type="number"
+                placeholder="Enter your phone no."
+                className="md:w-[30rem] w-[40rem] md:h-[3rem] h-[5rem] md:text-xl text-4xl rounded-2xl p-2 pl-7 text-white border-gray-200 border-2"
+              />
+              <input
+                type="email"
+                placeholder="Enter your email"
+                className="md:w-[30rem] w-[40rem] md:h-[3rem] h-[5rem] md:text-xl text-4xl rounded-2xl p-2 pl-7 text-white border-gray-200 border-2"
+              />
+              <textarea
+                placeholder="Enter your message"
+                className="md:w-[30rem] w-[40rem] md:h-[3rem] h-[5rem] md:text-xl text-4xl rounded-2xl p-2 pl-7 text-white border-gray-200 border-2"/>
+              <button className="bg-[#ffb800] text-black font-dis md:w-[10rem] w-[5rem] h-[3rem] rounded-full ml-2 ">
+                Enquiry
+              </button>
+            </div>
+          </form>
         </div>
         <div className="relative w-full overflow-hidden  ">
           <div className="absolute h-full" />
