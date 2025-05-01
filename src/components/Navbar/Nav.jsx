@@ -11,20 +11,18 @@ const CurvedMenu = () => {
   return (
     <div> 
       <div className=" fixed top-5 z-50 menu-glass-card md:left-15 rounded-full md:mt-0 mt-5 md:ml-0 ml-10">
-        <div className="flex justify-center items-center bg-white md:h-20 md:w-20 h-[250px] w-[250px] rounded-full">
-          {/* <h1 className=" font-bold mr-1">C</h1>
-          <h1>C</h1> */}
-          <img className="md:w-[100px] w-[200px]" src={mainlogo}></img>
+        <div className="flex justify-center items-center bg-white md:h-20 md:w-20 h-[180px] w-[180px] rounded-full">
+          <img className="md:w-[100px] w-[170px]" src={mainlogo}></img>
         </div>
       </div>
       <div className="relative">
         {!isOpen && (
           <button
             className="fixed top-5 z-50 menu-glass-card md:right-15 right-0 text-white md:px-5 px-10 md:py-4 py-10 rounded-full shadow-lg
-            md:mt-0 mt-5 md:mr-0 mr-10 md:h-20 md:w-20 h-[250px] w-[250px] flex items-center justify-center"
+            md:mt-0 mt-5 md:mr-0 mr-10 md:h-20 md:w-20 h-[180px] w-[180px] flex items-center justify-center"
             onClick={() => setIsOpen(true)}
           >
-            <img className="md:w-[40px] w-[120px]" src={menu}></img>
+            <img className="md:w-[40px] w-[130px]" src={menu}></img>
           </button>
         )}
 
