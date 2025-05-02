@@ -141,3 +141,10 @@ body {
 .event-btn{
   background: linear-gradient(to right, #622486, #119CFDFF)
 }
+
+.chat-btn{
+  background: linear-gradient(to right, #622486, #119CFDFF)
+}
+.chat-send{
+  background: linear-gradient(to right, #119CFDFF, #622486)
+}

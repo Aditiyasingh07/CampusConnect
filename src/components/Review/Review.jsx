@@ -4,7 +4,7 @@ import relogo from "/src/assets/review.png"
 export default function Review() {
   return (
     <>
-      <div className="w-full h-screen m-auto md:mt-0 mt-450 bg-[#f5f5f5]">
+      <div className="w-full h-screen m-auto md:mt-0 mt-[2550px] bg-[#f5f5f5]">
         <h1 className=" md:text-5xl text-[8rem] font-extrabold flex text-black justify-center pt-40 mb-30 tracking-widest">
           REVIEW
         </h1>

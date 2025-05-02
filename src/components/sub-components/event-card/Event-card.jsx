@@ -9,7 +9,7 @@ const EventCard = () => {
       };
 
     return (
-      <header className=" flex flex-col gap-y-7 items-center text-center p-4 md:w-[550px] w-[1250px] md:h-[100%] h-[120%]">
+      <header className=" flex flex-col md:gap-y-7 gap-y-15 items-center text-center p-4 md:px-0 px-25 md:w-[550px] w-[1250px] md:h-[100%] h-[700px]">
         <div>
           <h3 className="md:text-2xl text-[5rem] font-bold text-center">{eventDetails.name}</h3>
         </div>
@@ -17,7 +17,7 @@ const EventCard = () => {
           <div className="text-white md:text-sm text-[2rem]">
             <span>{eventDetails.date}</span>
           </div>
-          <div className="text-white md:text-sm text-[] ">
+          <div className="text-white md:text-sm text-[2rem]">
           <span>{eventDetails.venue}</span>
           </div>
           <p className="text-white md:text-xl text-[3rem] font-bold">{eventDetails.description}</p>
