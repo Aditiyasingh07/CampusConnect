@@ -115,8 +115,29 @@ body {
   display: flex;
   gap: 80px;
   transition: all 0.3s ease;
+  box-shadow: 10px 10px 10px black;
+  background: conic-gradient( white, rgb(87, 210, 87), green);
+  transition: all 0.3s ease;
+}
+.memo1{
+  background: conic-gradient( white, rgb(239, 88, 88), red);
+}
+.memo2{
+  background: conic-gradient( white, rgb(96, 96, 241), blue);
+}
+.memo3{
+  background: conic-gradient( white, rgb(180, 180, 180), gray);
 }
 
 .memo:hover{
   gap: 100px;
+  box-shadow: 0px 0px black;
+}
+
+.equ-form{
+  background: linear-gradient(#622486, #119CFDFF)
+}
+
+.event-btn{
+  background: linear-gradient(to right, #622486, #119CFDFF)
 }

@@ -32,7 +32,7 @@ function ContactForm() {
     <form
       onSubmit={handleSubmit}
       method="POST"
-      className="bg-gradient-to-t rounded-2xl from-[#119CFDFF] to-[#622486] md:w-[50%] w-[70%] m-auto md:mt-30 mt-20"
+      className=" equ-form rounded-2xl md:w-[50%] w-[70%] m-auto md:mt-30 mt-20"
     >
       <div className="flex flex-col md:gap-5 gap-5 rounded-3xl px-5 py-10 justify-center items-center md:mt-[-10px] mt-0">
         <input

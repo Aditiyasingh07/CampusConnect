@@ -21,7 +21,7 @@ const EventCard = () => {
           <span>{eventDetails.venue}</span>
           </div>
           <p className="text-white md:text-xl text-[3rem] font-bold">{eventDetails.description}</p>
-          <div className="w-full mt-10 bg-gradient-to-r from-blue-600 via-red-400 to-pink-800 p-4 md:text-2xl text-[3rem] hover:bg-blue-700 rounded-3xl font-bold text-white">Register Now</div>
+          <div className=" event-btn w-full mt-10 p-4 md:text-2xl text-[3rem] hover:bg-blue-700 rounded-3xl font-bold text-white">Register Now</div>
         </div>
       </header>
     );
