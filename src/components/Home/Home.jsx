@@ -1,5 +1,6 @@
 import React, { useRef, useEffect } from "react";
 import { gsap } from "gsap";
+import ContactForm from "./EnqForm";
 import Events from "../Events/Events";
 import Memories from "../Memories/Memories";
 import Navbar from "../Navbar/Navbar";
@@ -40,7 +41,8 @@ export default function Home() {
             <div ref={contwoRef} className=" inline-block">C</div>onnect
             </div>
           </h1>
-          <form
+          <ContactForm />
+          {/* <form
             action="https://formspree.io/f/movdvgvp"
             method="POST" 
           className="bg-gradient-to-t rounded-2xl from-[#119CFDFF] to-[#622486] md:w-[50%] w-[80%] m-auto md:mt-30 mt-20">
@@ -67,7 +69,7 @@ export default function Home() {
                 Enquiry
               </button>
             </div>
-          </form>
+          </form> */}
         </div>
         <div className="relative w-full overflow-hidden  ">
           <div className="absolute h-full" />
