@@ -11,21 +11,23 @@ function ContactForm() {
     message: "",
   });
 
-  // Reset form after successful submit
   useEffect(() => {
     if (state.succeeded) {
       setFormData({ name: "", number: "", email: "", message: "" });
     }
   }, [state.succeeded]);
 
-  // Handle input change
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
   if (state.succeeded) {
-    return <p className="bg-[#ffb800] text-white text-3xl rounded-3xl font-bold p-5">Thanks for joining!</p>;
+    return (
+      <p className="bg-[#ffb800] text-white text-3xl rounded-3xl font-bold p-5">
+        Thanks for joining!
+      </p>
+    );
   }
 
   return (

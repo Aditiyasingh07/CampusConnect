@@ -2,7 +2,7 @@ import React, { useRef, useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import EventCard from "../sub-components/event-card/Event-card";
-import Navbar from "../Navbar/Navbar"
+import Navbar from "../Navbar/Navbar";
 
 export default function Events() {
   const containerRef = useRef(null);
@@ -31,13 +31,12 @@ export default function Events() {
 
   return (
     <>
-    <Navbar/>
+      <Navbar />
       <div ref={containerRef}>
         <h1 className=" md:text-5xl text-[8rem] font-extrabold flex text-black justify-center pt-30 tracking-widest">
           EVENTS
         </h1>
-        <div
-          className=" flex justify-evenly items-center px-10 md:w-[300%] w-[400%] md:h-[700px] h-[100%] ">
+        <div className=" flex justify-evenly items-center px-10 md:w-[300%] w-[400%] md:h-[700px] h-[100%] ">
           <section className=" bg-[#09191f] panel text-white rounded-[50px] hover:rounded-4xl transition delay-300">
             <EventCard />
           </section>

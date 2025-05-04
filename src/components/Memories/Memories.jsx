@@ -1,10 +1,12 @@
 import react from "react";
 import { Link } from "react-router-dom";
 import "/src/App.css";
+import Navbar from "../Navbar/Navbar";
 
 export default function Memories() {
   return (
     <>
+      <Navbar />
       <div className="w-full h-screen flex flex-col justify-center items-center pb-40">
         <h1 className=" md:text-5xl text-[8rem] font-extrabold text-black flex justify-center pt-30 pb-40  tracking-widest">
           MEMORIES

@@ -2,13 +2,11 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
-import AuthButtons from "../AuthButton/AuthButton";
 import mainlogo from "/src/assets/main logo.png";
 import menu from "/src/assets/menu.svg";
 import { motion } from "framer-motion";
 import { auth, db } from "../../firebaseConfig";
 import { collection, query, where, getDocs, addDoc } from "firebase/firestore";
-// import Navbar from "../Navbar/Navbar";
 
 function Chat() {
   const [groups, setGroups] = useState([]);
@@ -79,12 +77,13 @@ function Chat() {
 
   return (
     <>
-      {/* <Navbar /> */}
       <nav>
         <div>
           <div className=" fixed md:top-5 top-[-10px] z-50 menu-glass-card md:left-15 rounded-full md:mt-0 mt-5 md:ml-0 ml-3">
             <div className="flex justify-center items-center bg-white md:h-20 md:w-20 h-[45px] w-[45px] rounded-full">
-              <img className="md:w-[100px] w-[45px]" src={mainlogo}></img>
+              <Link to="/">
+                <img className="md:w-[100px] w-[45px]" src={mainlogo}></img>
+              </Link>
             </div>
           </div>
           <div className="relative">
@@ -102,7 +101,7 @@ function Chat() {
               initial={{ x: "100%" }}
               animate={{ x: isOpen ? 0 : "100%" }}
               transition={{ type: "spring", stiffness: 40, damping: 7 }}
-              className="fixed top-0 right-0 z-50 md:h-[90%] h-[40%] md:w-[17%] w-[100%] bg-[#A100FFFF] shadow-2xl md:rounded-l-[50px] rounded-l-[0px] flex flex-col items-center justify-center space-y-6"
+              className="fixed top-0 right-0 z-50 md:h-[90%] h-[25%] md:w-[17%] w-[100%] bg-[#A100FFFF] shadow-2xl md:rounded-l-[50px] rounded-l-[0px] flex flex-col items-center justify-center space-y-6"
             >
               <button
                 className="absolute top-5 md:text-3xl text-[2rem] right-5 text-white rounded-full bg-[#119CFDFF] md:w-15 w-12 md:h-15 h-12 flex items-center justify-center shadow-lg"
@@ -111,7 +110,7 @@ function Chat() {
                 💢
               </button>
 
-              <div className="flex md:gap-5 gap-2 md:flex-col flex-wrap justify-center text-white md:text-3xl text-[1.6rem] mt-10">
+              <div className="md:flex hidden md:gap-5 gap-2 md:flex-col flex-wrap justify-center text-white md:text-3xl text-[1.6rem] mt-10">
                 <Link to="/" className="hover:text-gray-200 cursor-pointer">
                   . HOME
                 </Link>
@@ -146,7 +145,7 @@ function Chat() {
                     Logout
                   </button>
                 ) : (
-                  <div className=" flex md:flex-col gap-5 mt-10 space-x-4">
+                  <div className="flex md:flex-row flex-col gap-5 md:mt-10 mt-5 space-x-4">
                     <button className=" bg-transprent btn-glass-card text-white font-semibold rounded md:mt-0 mt-0 px-4 py-2 md:h-15 h-12 md:w-40 w-25 md:text-2xl text-[1.3rem] hover:text-[20px]">
                       <Link to="/login">Login</Link>
                     </button>
@@ -160,7 +159,7 @@ function Chat() {
           </div>
         </div>
       </nav>
-      <div className="p-6 flex md:flex-row flex-col h-full pt-[100px] bg-[#622486] text-white">
+      <div className="p-6 flex md:flex-row flex-col md:h-full h-screen pt-[100px] bg-[#622486] text-white">
         {user ? (
           <>
             <div className="md:w-1/4 w-full md:border-r border-0 pr-4">
@@ -227,7 +226,7 @@ function Chat() {
             </div>
           </>
         ) : (
-          <div className="w-full bg-[#119CFDFF] flex pt-5 justify-center h-full rounded-4xl text-5xl font-bold">
+          <div className="w-full flex pt-5 md:p-0 p-3 justify-center items-center text-center h-[150px] rounded-4xl md:text-5xl text-3xl font-bold">
             Login to chat with your friends.
           </div>
         )}

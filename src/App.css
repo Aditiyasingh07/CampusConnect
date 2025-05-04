@@ -93,58 +93,56 @@ body {
 
 .login {
   background: conic-gradient(from 36deg at 25% 80%,
-      #A100FFFF
-      0%,
-      #000000
-      25%,
-      #119CFDFF
-      30%);
+      #A100FFFF 0%,
+      #000000 25%,
+      #119CFDFF 30%);
 }
 
 .signup {
   background: conic-gradient(from 36deg at 25% 80%,
-  #A100FFFF
-  0%,
-  #000000
-  25%,
-  #119CFDFF
-  30%);
+      #A100FFFF 0%,
+      #000000 25%,
+      #119CFDFF 30%);
 }
 
-.memo{
+.memo {
   display: flex;
   gap: 80px;
   transition: all 0.3s ease;
   box-shadow: 10px 10px 10px black;
-  background: conic-gradient( white, rgb(87, 210, 87), green);
+  background: conic-gradient(white, rgb(87, 210, 87), green);
   transition: all 0.3s ease;
 }
-.memo1{
-  background: conic-gradient( white, rgb(239, 88, 88), red);
-}
-.memo2{
-  background: conic-gradient( white, rgb(96, 96, 241), blue);
-}
-.memo3{
-  background: conic-gradient( white, rgb(180, 180, 180), gray);
+
+.memo1 {
+  background: conic-gradient(white, rgb(239, 88, 88), red);
 }
 
-.memo:hover{
+.memo2 {
+  background: conic-gradient(white, rgb(96, 96, 241), blue);
+}
+
+.memo3 {
+  background: conic-gradient(white, rgb(180, 180, 180), gray);
+}
+
+.memo:hover {
   gap: 100px;
   box-shadow: 0px 0px black;
 }
 
-.equ-form{
+.equ-form {
   background: linear-gradient(#622486, #119CFDFF)
 }
 
-.event-btn{
+.event-btn {
   background: linear-gradient(to right, #622486, #119CFDFF)
 }
 
-.chat-btn{
+.chat-btn {
   background: linear-gradient(to right, #622486, #119CFDFF)
 }
-.chat-send{
+
+.chat-send {
   background: linear-gradient(to right, #119CFDFF, #622486)
 }

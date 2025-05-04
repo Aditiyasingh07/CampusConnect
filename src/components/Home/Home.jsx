@@ -32,13 +32,16 @@ export default function Home() {
     <>
       <Navbar />
       <div className="md:w-full w-[400%]">
-        <div className=" bg-[#622486] gap-20 text-black description md:h-full h-[240vh] md:flex [clip-path:polygon(0%_0%,100%_0%,100%_80%,50%_90%,0%_100%)]">
+        <div className=" bg-[#622486] gap-20 text-black description md:h-full h-[270vh] md:flex [clip-path:polygon(0%_0%,100%_0%,100%_80%,50%_90%,0%_100%)]">
           <h1 className="font-dis flex flex-col md:ml-10 ml-0 md:mt-0 mt-[300px] md:mb-0 mb-10 items-center justify-center md:text-[5rem] text-[9rem] text-white ">
             <div className=" camp text-[#ffb800] md:mb-[-50px] mb-0">
-            Campus 
+              Campus
             </div>
             <div className="text-[#cdcabb]">
-            <div ref={contwoRef} className=" inline-block">C</div>onnect
+              <div ref={contwoRef} className=" inline-block">
+                C
+              </div>
+              onnect
             </div>
           </h1>
           <ContactForm />
@@ -53,9 +56,9 @@ export default function Home() {
             AVVIARE EDUCATIONAL HUB, NOIDA SECTOR - 62
           </div>
         </div>
-        <Events /> 
+        <Events />
         <Memories />
-        <Review/>
+        <Review />
       </div>
     </>
   );
