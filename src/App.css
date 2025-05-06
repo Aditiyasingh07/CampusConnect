@@ -146,3 +146,7 @@ body {
 .chat-send {
   background: linear-gradient(to right, #119CFDFF, #622486)
 }
+
+auth-btn{
+  background: linear-gradient(to right, rgb(255, 115, 115), rgb(161, 50, 69))
+}

@@ -90,6 +90,7 @@ function Chat() {
     }
   };
 
+
   const [isOpen, setIsOpen] = useState(false);
   return (
     <>
@@ -158,7 +159,7 @@ function Chat() {
         </div>
       </nav>
 
-      <div className="p-6 flex md:flex-row flex-col md:h-full h-screen pt-[100px] bg-[#622486] text-white">
+      <div className="p-6 flex md:flex-row flex-col md:h-screen h-full md:pt-[100px] pt-15 bg-[#622486] text-white">
         {user ? (
           <>
             <div className="md:w-1/4 w-full md:border-r border-0 pr-4">
@@ -188,11 +189,11 @@ function Chat() {
               {currentGroup ? (
                 <div className="text-white md:p-10 p-0">
                   <h2 className="text-2xl bg-[#119CFDFF] w-40 text-center rounded-3xl p-3 font-bold mb-4">
-                    Chat - {currentGroup.courseName}
+                    {user.name} - {currentGroup.courseName}
                   </h2>
-                  <div className="h-64 md:w-full border overflow-auto rounded-2xl p-5 mb-4 text-white">
+                  <div className="h-64 md:w-full border overflow-auto rounded-2xl md:p-5 p-2 mb-4 text-white">
                     {messages.map((msg, index) => (
-                      <div key={index} className="mb-5 flex flex-row items-center gap-5">
+                      <div key={index} className="mb-5 bg-gray-800 flex flex-row md:px-0 px-4 rounded-3xl items-center gap-5">
                         <strong>{msg.sender}:</strong>
                         <span>{msg.content}</span>
                         <span className="text-sm text-gray-300">

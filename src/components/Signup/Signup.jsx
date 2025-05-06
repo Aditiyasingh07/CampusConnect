@@ -216,7 +216,7 @@ function Signup() {
             <button
               type="submit"
               disabled={loading}
-              className="w-full text-2xl font-black rounded-3xl bg-gradient-to-r npm from-red-400 to-pink-800 text-white p-4"
+              className="w-full text-2xl font-black rounded-3xl auth-btn npm text-white p-4"
             >
               {loading ? "Signing up..." : "Signup"}
             </button>
